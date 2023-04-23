@@ -3,24 +3,25 @@
 import { ref, onMounted, reactive } from "vue";
 import TarjetaIngresos from '../Classes/TarjetaIngresos';
 import TarjetaEgresos from '../Classes/TarjetaEgresos';
+import Jugador from '../Classes/Jugador';
 
 const msg = ref(null);
 const entre = ref("Quita eso de mi cara");
 const leave = ref("Gracias, basura... Hola con reactividad atentamente dios");
 
-const jugador = reactive({
-  personas: 0,
-  puntos: 0,
-  ingresosTotales: 0,
-  egresosTotales: 0,
-  ingresosPersonas: 0,
-  multiplicadorIngresos: 1,
-  multiplicadorEgresos: 1,
-  multiplicadorIngresosPersonas: 1,
-  multuplicadorEgresosPersonas: 1,
-  buffos: [],
-  debuffos: []
-});
+const jugador = reactive (new Jugador(
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   [],
+   []
+));
 
 const tarjetaIngresos = new TarjetaIngresos(
   100,
@@ -40,12 +41,6 @@ const tarjetaEgresos = new TarjetaEgresos(
   "desbloqueado"
 );
 
-const sumarPersonas = () => {
-  jugador.personas++;
-};
-const sumarPuntos = () =>{
-  jugador.puntos++;
-}
 
 onMounted(()=>{
   msg.value = "Hola con reactividad atentamente dios";
@@ -65,8 +60,8 @@ onMounted(()=>{
       <h1>Puntos: {{ jugador.puntos }}</h1>
     </header>
     <main>
-      <button @click="sumarPersonas()">Sumar personas</button>
-      <button @click="sumarPuntos()">Sumar puntos</button>
+      <button @click="jugador.sumarPersonas()">Sumar personas</button>
+      <button @click="jugador.sumarPuntos()">Sumar puntos</button>
     </main>
 
     <h1>TAJETAS</h1>
