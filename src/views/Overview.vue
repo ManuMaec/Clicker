@@ -1,29 +1,25 @@
-
 <script setup>
 import { ref, onMounted, reactive } from "vue";
-import TarjetaIngresos from '../Classes/TarjetaIngresos';
-import TarjetaEgresos from '../Classes/TarjetaEgresos';
-import Jugador from '../Classes/Jugador';
+import TarjetaIngresos from "../Classes/TarjetaIngresos.js";
+import TarjetaEgresos from "../Classes/TarjetaEgresos.js";
+import { Jugador } from "../Classes/Jugador.js";
 
-const msg = ref(null);
-const entre = ref("Quita eso de mi cara");
-const leave = ref("Gracias, basura... Hola con reactividad atentamente dios");
+let msg = ref(null);
+let entre = ref("Quita eso de mi cara");
+let leave = ref("Gracias, basura... Hola con reactividad atentamente dios");
 
-const jugador = reactive (new Jugador(
-   0,
-   0,
-   0,
-   0,
-   0,
-   1,
-   1,
-   1,
-   1,
-   [],
-   []
-));
+let jugador = reactive(new Jugador(0, 0, 0, 0, 0, 1, 1, 1, 1, [], []));
 
-const tarjetaIngresos = new TarjetaIngresos(
+const sumarPersonas = () => {
+  kk.value == 0? kk.value = 1 : kk.value = 0;
+  jugador.sumarPersonas();
+};
+const sumarPuntos = () => {
+  kk.value == 0? kk.value = 1 : kk.value = 0;
+  jugador.sumarPuntos();
+};
+
+let tarjetaIngresos = new TarjetaIngresos(
   100,
   500,
   "Mi Tarjeta",
@@ -32,7 +28,7 @@ const tarjetaIngresos = new TarjetaIngresos(
   "desbloqueado"
 );
 
-const tarjetaEgresos = new TarjetaEgresos(
+let tarjetaEgresos = new TarjetaEgresos(
   50,
   200,
   150,
@@ -41,30 +37,34 @@ const tarjetaEgresos = new TarjetaEgresos(
   "desbloqueado"
 );
 
+let kk = ref(0);
 
-onMounted(()=>{
+onMounted(() => {
   msg.value = "Hola con reactividad atentamente dios";
 });
 </script>
 <template>
-    <h1 
-      @click="() => msg = msg+'!'" 
-      @mouseenter=" () => msg=entre" 
-      @mouseleave=" () => msg = leave"
+  <main>
+    <h1
+      @click="() => (msg = msg + '!')"
+      @mouseenter="() => (msg = entre)"
+      @mouseleave="() => (msg = leave)"
     >
       Hola mundo
     </h1>
-    <h3>{{msg}}</h3>
-    <header>
-      <h1>Personas: {{ jugador.personas }}</h1>
-      <h1>Puntos: {{ jugador.puntos }}</h1>
-    </header>
+    <h2 @click="kk += 1" v-show="false">{{ kk }}</h2>
+    <h3>{{ msg }}</h3>
     <main>
-      <button @click="jugador.sumarPersonas()">Sumar personas</button>
-      <button @click="jugador.sumarPuntos()">Sumar puntos</button>
+      <button @click="sumarPersonas">Sumar personas</button>
+      <button @click="sumarPuntos">Sumar puntos</button>
     </main>
+    <header>
+      <h4>Personas: {{ jugador.personas }}</h4>
+      <h4>Puntos: {{ jugador.puntos }}</h4>
+    </header>
 
     <h1>TAJETAS</h1>
+    
     <div>
       <div>
         <h3>Tarjeta de Ingresos</h3>
@@ -85,4 +85,5 @@ onMounted(()=>{
         <p>Estado: {{ tarjetaEgresos.estado }}</p>
       </div>
     </div>
+  </main>
 </template>

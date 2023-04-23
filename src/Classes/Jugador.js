@@ -1,4 +1,4 @@
-export default class Jugador {
+export class Jugador {
   constructor(
     personas,
     puntos,
@@ -28,9 +28,11 @@ export default class Jugador {
   sumarPersonas = () => {
     this.personas++;
     console.log(this.personas);
+    return;
   };
   sumarPuntos = () => {
     this.puntos++;
     console.log(this.puntos);
+    return;
   };
 }
