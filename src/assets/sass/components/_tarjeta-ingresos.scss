@@ -1,0 +1,80 @@
+.profit-card{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 10px;
+
+  height: 200px;
+  min-width: 200px;
+
+  border-radius: 20px;
+
+  background-color: aliceblue;
+  background-image: url('https://picsum.photos/id/99/300/300');
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  
+  transition: all 0.2s;
+
+  &-locke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 20px;
+
+    background-color: rgba(16, 22, 28, 0.635);
+
+    transition: all 0.2s;
+  }
+
+  &-unlocke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 100%;
+
+    border-radius: 20px;
+    
+    background-color: rgba(16, 22, 28, 0.635);
+
+    transition: all 0.2s;
+  }
+
+  &--atributes{
+    margin: 2px;
+    transition: all 0.2s;
+  }
+  &--button{
+    appearance: none;
+    padding: 7px;
+
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    
+    background-color: #00000000;
+    box-shadow: none;
+
+    color: #ffffff;
+
+    transition: all 0.2s;
+
+    &:hover{
+      cursor: pointer;
+      background-color: #4a0a0a7f;
+      transform: scale(1.05);
+    }
+  }
+  
+}

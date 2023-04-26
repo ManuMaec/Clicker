@@ -1,38 +1,26 @@
-export class Jugador {
-  constructor(
-    personas,
-    puntos,
-    ingresosTotales,
-    egresosTotales,
-    ingresosPersonas,
-    multiplicadorIngresos,
-    multiplicadorEgresos,
-    multiplicadorIngresosPersonas,
-    multuplicadorEgresosPersonas,
-    buffos,
-    debuffos
-  ) {
-    this.personas = personas;
-    this.puntos = puntos;
-    this.ingresosTotales = ingresosTotales;
-    this.egresosTotales = egresosTotales;
-    this.ingresosPersonas = ingresosPersonas;
-    this.multiplicadorIngresos = multiplicadorIngresos;
-    this.multiplicadorEgresos = multiplicadorEgresos;
-    this.multiplicadorIngresosPersonas = multiplicadorIngresosPersonas;
-    this.multuplicadorEgresosPersonas = multuplicadorEgresosPersonas;
-    this.buffos = buffos;
-    this.debuffos = debuffos;
+export default class Jugador {
+  constructor() {
+    this.personas = 0;
+    this.puntos = 10;
+    this.ingresosTotales = 0;
+    this.egresosTotales = 0;
+    this.ingresosPersonas = 0;
+    this.multiplicadorIngresos = 1;
+    this.multiplicadorEgresos = 1;
+    this.multiplicadorIngresosPersonas = 1;
+    this.multuplicadorEgresosPersonas = 1;
+    this.buffos = [];
+    this.debuffos = [];
   }
-  
+
   sumarPersonas = () => {
     this.personas++;
     console.log(this.personas);
     return;
   };
   sumarPuntos = () => {
-    this.puntos++;
-    console.log(this.puntos);
+    console.log(this.ingresosTotales);
+    this.puntos += this.ingresosTotales
     return;
   };
 }

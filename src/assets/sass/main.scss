@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+// Abstracts
+
+@import './abstracts/_variables.scss';
+
+// Base
+
+@import './base/_typography.scss';
+
+// Components
+
+
+@import './components/_tarjeta-ingresos.scss';
+
+// Pages
+
+@import './pages/_overView.scss';

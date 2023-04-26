@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.profit-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  height: 200px;
+  min-width: 200px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  background-image: url("https://picsum.photos/id/99/300/300");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.profit-card-locke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(16, 22, 28, 0.635);
+  transition: all 0.2s;
+}
+.profit-card-unlocke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(16, 22, 28, 0.635);
+  transition: all 0.2s;
+}
+.profit-card--atributes {
+  margin: 2px;
+  transition: all 0.2s;
+}
+.profit-card--button {
+  appearance: none;
+  padding: 7px;
+  border: #ffffff solid 2px;
+  border-radius: 20px;
+  background-color: #00000000;
+  box-shadow: none;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.profit-card--button:hover {
+  cursor: pointer;
+  background-color: #4a0a0a7f;
+  transform: scale(1.05);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #087f47;
+}
+.main__card-carrousel {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
