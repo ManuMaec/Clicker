@@ -1,0 +1,76 @@
+GAME MARKET TOOLTIP
+
+-Economia= El flujo de recursos al rededor del sistema (dinero, materiales, municion, recursos, etc)
+
+	Entidades basicas de la economia
+	-Tap (fuente de recursos): Genera nuevos recursos en la economia (enemigos, granjas, etc), puede ser modificado
+	mediante la dificultad de obtencion del recurso, lugar de flujo o exploits para aprovechamiento (peligroso)
+	-inventario: Sera donde se guardaran los recursos, puede ser un inventario tipo bolsa para objetos, la bara 
+	de vida o mana o una cartera, aplicandole un limite para que los usuarios no se dediquen solo a ello y obligar
+	a los usuarios a elegir que es importante en ese momento o no.
+	-Convertidor: Algunos items pueden ser utiles por si solos como espadas o pistolas, otros tiene que ser
+	intercambiados en un convertidor por otros recursos mas utiles, como la experiencia, dinero o vida.
+	Dependiendo del costo de la convercion, esto puede tener fuertes repercuciones en el desarrollo del juego, 
+	pueden ser una gran herramiento para influir en la toma de deciciones del jugador al momento de tener cuidado
+	en que usar sus recursos.
+	-Drenaje de recursos: Elimina permanentemente recursos de la economia, como armar rompibles, perdida de vida, 
+	impuestos, etc. Haciendo que el jugador tenga que volver a puntos anteriores pero sin mejor equipamiento,
+	solo para recuperar o remplazar el equipo, teniendo que gastar tiempo y otros recursos para sustituir o disminuir
+	sus perdidas.
+	-Trader: Vende y compra recursos dependiendo de su propios deseos. Tienen su propio inventario y recursos, pueden
+	ser de diferentes tipos dependiendo de la zona y pueden afectar la economia y jugabilidad dependiendo de 
+	los recursos que vendan o compres y la diferencia de precios entre traders, Tambien se puede agregar el sistema
+	de suerte e inversion, pudiendo obtener mas o menos recursos y ganancias dependiendo de tu suerte a la 
+	hora de invertir en un trader, dando esa sensacion de riesgo al jugador
+
+	Loop positibo de retroalimentacion
+		Cuando los jugadores pueden volver a puntos anteriores pero con mejor armamento y recursos que
+	facilitan la obtencion de nuevos recursos en esa area, haciendo la que la salida se introduzca en la entrada,
+	reforzando asi la entrada, esto puede ser positivo o peligrosamente adictivo, lo que llevaria al grinding.
+
+	Hay diferentes formas de mejorar o eliminar el grinding dependiendo del juego:
+		-Fabrica: Automatizacion de los metodos para la obtencion de recursos de forma automatica, 
+		puediendo verse afectada por trabajo manual o circunstancias externas
+		-Loop Negativo de Retroalimentacion, la salida es usada para balancear el sistema de recursos en su estado
+		original, ajustando los recursos y su funcionalidad en los puntos iniciales para que no sean igual de 
+		rentables en los puntos mas avanzados.
+		
+
+RECURSOS:
+
+	-Puntos
+	-Personas
+	-Buffos
+	-Debuffos
+
+1-Identificar la función de cada recurso: En primer lugar, es importante determinar el propósito de cada recurso en el juego. Los puntos pueden ser la moneda 
+principal para comprar mejoras, las personas pueden ser necesarias para la construcción de edificios, el dinero puede ser usado para comprar recursos adicionales, 
+los buffos pueden mejorar las habilidades de tus cartas y los debuffos pueden dificultar las habilidades de las cartas del oponente.
+
+	-Puntos: Sirven para comprar y mejorar cartas
+	-Personas: Sirven para aumentar la rentabilidad y eficiencia de una carta permanentemente
+	-Buffos: Sirven para mejorar la produccion o eficiendia temporalmente
+	-Debuffo: Sirven para empeorar las condiciones o eficiencia
+
+2-Establecer una tasa de cambio: Una vez que se ha identificado la función de cada recurso, es importante establecer una tasa de cambio entre ellos. Por ejemplo, 
+los puntos pueden ser intercambiados por personas para construir edificios, y el dinero puede ser intercambiado por buffos y debuffos. Es importante que la tasa de 
+cambio sea equilibrada para mantener una economía estable en el juego.
+
+	-Puntos compran cartas para ganar mas puntos.
+	-Personas mejoran la eficiencia de las cartas para ganar mas puntos.
+	-Cartas dan puntos para comprar mas recursos
+	-Puntos compran buffos o debuffos para mejorar o empeorar las ganancias.
+
+3-Introducir límites: Para mantener una economía balanceada, es importante introducir límites en el juego. Por ejemplo, el número de personas o cartas que un jugador 
+puede tener puede estar limitado. También se puede limitar la cantidad de puntos que se pueden ganar en un período de tiempo determinado para evitar que un jugador 
+se vuelva demasiado poderoso demasiado rápido.
+
+4-Ofrecer incentivos: Para fomentar el uso de ciertos recursos, se pueden ofrecer incentivos a los jugadores. Por ejemplo, si los jugadores gastan sus puntos en 
+mejoras, se les puede ofrecer descuentos en los buffos y debuffos. Esto animará a los jugadores a utilizar sus puntos y equilibrará el sistema de economía del juego.
+
+5-Actualizar y ajustar: Finalmente, es importante actualizar y ajustar la economía del juego según sea necesario. Si se descubre que un recurso es demasiado 
+difícil de conseguir o demasiado fácil, o si la tasa de cambio no es equilibrada, es importante hacer ajustes para mantener la economía del juego equilibrada 
+y justa para todos los jugadores.
+
+
+	
