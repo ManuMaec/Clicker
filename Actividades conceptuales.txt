@@ -1,0 +1,8 @@
+-Imagenes para las cartas
+-Definir contexto de la situcacion
+-Definir para donde va el jugador
+-Competencia multijugador? ( Lader )
+-Reuniones para avanzar en el juego?
+-Evaluacion de desarrollo
+-Rentabilidad en servidores
+-Rentabilidad en bases de datos
